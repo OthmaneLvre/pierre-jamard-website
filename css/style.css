@@ -1,0 +1,13 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base du document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1ea;
+    color: #1f1f1f;
+}
