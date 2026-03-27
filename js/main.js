@@ -70,3 +70,28 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach((element) => {
     revealObserver.observe(element);
 });
+
+// ================================
+// LIGHTBOX
+// ================================
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+const workImages = document.querySelectorAll('.work-img');
+
+workImages.forEach((img) => {
+    img.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = img.src;
+    });
+});
+
+lightboxClose.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove('active');
+    }
+});

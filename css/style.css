@@ -210,7 +210,7 @@ section {
 }
 
 .work-card:hover .work-image img {
-    transform: translateY(-8px);
+    transform: scale(1.05);
 }
 
 .work-image {
@@ -332,6 +332,42 @@ section {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ==================
+    LIGHTBOX
+================== */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 2000;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
 }
 
 /* ==================
