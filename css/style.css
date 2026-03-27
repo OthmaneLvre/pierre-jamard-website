@@ -143,3 +143,90 @@ ul {
     background-color: var(--color-text);
     color: var(--color-white);
 }
+
+/* ==================
+    SECTIONS GLOBAL 
+================== */
+.section {
+    padding: 110px 0;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+
+.section-label {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.section-header h2 {
+    font-family: var(--font-title);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+/* ==================
+    TEXT CONTENT
+================== */
+.text-content {
+    max-width: 800px;
+    display: grid;
+    gap: 24px;
+}
+
+.text-content p {
+    color: var(--colo-text-muted);
+    font-size: 1.05rem;
+}
+
+/* ==================
+    WORKS GRID
+================== */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.work-card {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(31, 31, 31, 0.08);
+    transition: all var(--transition);
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+.work-image {
+    height: 260px;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #d8c7b5, #b89c84);
+}
+
+/* ==================
+    APPROACH
+================== */
+.approach {
+    background-color: var(--color-surface);
+}
+
+/* ==================
+    CONTACT 
+================== */
+.contact-text {
+    margin-bottom: 20px;
+    color: var(--colo-text-muted);
+}
+
+.contact-link {
+    font-weight: 600;
+    color: var(--color-accent);
+}
