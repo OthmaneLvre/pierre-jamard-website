@@ -11,16 +11,22 @@
     <title>Pierre Jamard - Artiste</title>
     <meta name="description" content="Site vitrine artistique présentant Pierre Jamard et ses œuvres.">
 
+    <!-- Polices -->
+    <link rel="preconnect" href="https://font.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <!-- Feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <nav>
-            <h1>Pierre Jamard</h1>
-            <ul>
+    <header class="site-header">
+        <nav class="container main-nav">
+            <a href="#hero" class="logo">Pierre Jamard</a>
+
+            <ul class="nav-list">
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#works">Oeuvres</a></li>
                 <li><a href="#approach">Démarche</a></li>
@@ -32,16 +38,24 @@
     <main>
 
         <!-- HERO -->
-        <section id="hero">
-            <h2>Artiste contemporain</h2>
-            <p>Un univers entre matière et émotion.</p>
+        <section id="hero" class="hero">
+            <div>
+                <p class="hero-subtitle">Artiste contemporain</p>
+                <h1>Une présence artistique entre matière, silence et émotion.</h1>
+                <p class="hero-text">
+                    Pierre Jamard développe un univers sensible où les oeuvres invitent à la contemplation
+                    et à l'interprétation personnelle.
+                </p>
+                <a href="#works" class="hero-button">Découvrir les oeuvres</a>
+            </div>
         </section>
 
         <!-- À PROPOS -->
         <section id="about">
             <h2>À propos</h2>
             <p>
-                Pierre Jamard développe une approche artistique centrée sur la matière, la lumière et la sensibilité.
+                Pierre Jamard développe une approche artistique centrée sur la matière,
+                la lumière et la sensibilité.
             </p>
         </section>
 
@@ -61,7 +75,8 @@
         <section id="approach">
             <h2>Démarche artistique</h2>
             <p>
-                Chaque oeuvre est pensée comme un espace d'interprétation, laissant place à la projection personnelle du spectateur.
+                Chaque oeuvre est pensée comme un espace d'interprétation,
+                laissant place à la projection personnelle du spectateur.
             </p>
         </section>
 
@@ -80,6 +95,6 @@
 
     <!-- Fichier JavaScript -->
     <script src="js/main.js"></script>
-    
+
 </body>
 </html>
