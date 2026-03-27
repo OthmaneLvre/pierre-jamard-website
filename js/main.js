@@ -83,15 +83,25 @@ workImages.forEach((img) => {
     img.addEventListener('click', () => {
         lightbox.classList.add('active');
         lightboxImg.src = img.src;
+        document.body.style.overflow = 'hidden';
     });
 });
 
 lightboxClose.addEventListener('click', () => {
     lightbox.classList.remove('active');
+    document.body.style.overflow = '';
 });
 
 lightbox.addEventListener('click', (e) => {
     if (e.target !== lightboxImg) {
         lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
     }
 });

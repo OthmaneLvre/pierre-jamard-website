@@ -340,13 +340,14 @@ section {
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s ease;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
     z-index: 2000;
 }
 
@@ -355,19 +356,31 @@ section {
     visibility: visible;
 }
 
+.lightbox.active .lightbox-img {
+    transform: scale(1);
+}
+
 .lightbox-img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 85%;
     object-fit: contain;
+    transform: scale(0.95);
+    transition: transform 0.35s ease;
 }
 
 .lightbox-close {
     position: absolute;
     top: 30px;
     right: 40px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
 }
 
 /* ==================
