@@ -289,6 +289,19 @@ section {
     cursor: pointer;
 }
 
+.work-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.04rem;
+}
+
+.work-description {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-top: 6px;
+}
+
 /* ==================
     APPROACH
 ================== */
