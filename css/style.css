@@ -345,6 +345,33 @@ section {
     color: var(--color-text-muted);
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-signature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.footer-signature img {
+    height: 22px;
+    opacity: 0.8;
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.footer-signature a {
+    display: flex;
+    align-items: center;
+}
+
 /* ==================
     HEARDER SCROLLED 
 ================== */
