@@ -303,15 +303,13 @@ section {
 }
 
 /* ==================
-    APPROACH
+    CONTACT 
 ================== */
-.approach {
+
+.contact {
     background-color: var(--color-surface);
 }
 
-/* ==================
-    CONTACT 
-================== */
 .contact-text {
     max-width: 700px;
     margin-bottom: 20px;
